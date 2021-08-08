@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+.formular {
+    border: 2px solid black;
+    padding:20px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1.5fr 4fr 1fr; 
+    gap: 1rem 3rem; 
+    grid-template-areas: 
+      "fname img"
+      "lname img"
+      "MorF img"
+      "message img"
+      "submit img"; 
+  }
+}
+.fname { grid-area: fname; }
+.lname { grid-area: lname; }
+.MorF {
+    display: flex;
+    align-items: baseline;
+}
+.gendertitle {    
+      grid-area: MorF; 
+}
+.radiogroup {
+    padding-left: 1rem;
+    grid-area: MorF;
+    display: flex;
+    flex-direction: column;
+}
+.message { grid-area: message; }
+.submit { 
+    grid-area: submit; 
+    margin-left: auto;
+}
+.imagine { grid-area: img; }
