@@ -1,24 +1,4 @@
 
-// (function() {
-// 'use strict'
-// const jsfname = document.querySelector('.fname').value;
-// const jslname = document.querySelector('.lname').value;
-// const jsmessage = document.querySelector('.message');
-// const jssubmit = document.querySelector('.submit');
-
-// let user = {prenume:"", numefam:"", gen:"", mesaj:""};
-
-   
-  
-// jssubmit.addEventListener('submit', () => {
-//     debugger;
-//     event.preventDefault();
-//     if (checknames(jsfname)) {
-//         console.log(jsfname);
-//     } else return false;
-// })
-
-// })(); 
 
 (function() {
 ' use strict'
