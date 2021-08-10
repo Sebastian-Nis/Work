@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d763780ed7.js" crossorigin="anonymous"></script>
+    <script async src="scripts/JSform.js"></script>
+</head>
+<body>
+    <div class="main">
+        <span class="confirm">
+            <i class="fas fa-check-circle"></i>
+            <p>Thank you for contacting us</p>
+            <i class="fas fa-times"></i>
+        </span>
+        <form action="" class="formular" data-form>
+            <input type="text" class="fname" placeholder="First Name" required>
+            <input type="text" class="lname" placeholder="Last Name" required>
+            <span class="MorF">
+                <p class="gendertitle">Gender</p>
+                <div class="radiogroup">
+                    <span>
+                        <input type="radio" name="MorF" id="male">        
+                        <label for="male" >M</label>
+                    </span>
+                    <span>
+                        <input type="radio" name="MorF" id="female">        
+                        <label for="female" >F</label>
+                    </span>
+                </div>
+            </span>
+            <input type="text" class="message" name="Message" id="message" placeholder="Your message here...">
+            <button class="submit">Submit</button>
+            <img src="src/profile pic.jpg" class="imagine" alt="" srcset="">
+        </form>
+    </div>
+</body>
+</html>

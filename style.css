@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    font-family: 'Montserrat', sans-serif;
+}
+.main {
+    display: grid;
+    justify-items: center;
+    margin: auto;
+    width: 50%;
+}
+.confirm {
+    display: flex;
+    background-color: rgb(177, 233, 177);
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px 5px;
+    margin: 10px 20px;
+    height: 30px;
+    width: 100%;
+}
+.fas {
+    padding: 2px 8px;
+}
+.fa-check-circle {
+    color: green;
+}
+.fa-times{
+    color: red;
+    margin-left: auto;
+}
+.confirm p {
+    font-weight: bold;
+}
+.formular {
+    width: 100%;
+    border: 2px solid black;
+    padding:20px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1.5fr 4fr 1fr; 
+    gap: 1rem 3rem; 
+    grid-template-areas: 
+      "fname img"
+      "lname img"
+      "MorF img"
+      "message img"
+      "submit img"; 
+  }
+}
+.fname { grid-area: fname; }
+.lname { grid-area: lname; }
+.MorF {
+    display: flex;
+    align-items: baseline;
+}
+.gendertitle {    
+      grid-area: MorF; 
+}
+.radiogroup {
+    margin-left: 2rem;
+    grid-area: MorF;
+    display: flex;
+    flex-direction: column;
+}
+.message { grid-area: message; }
+.submit { 
+    grid-area: submit; 
+    margin-left: auto;
+}
+.imagine { 
+    grid-area: img; 
+    justify-self: center;
+    align-self: center;
+}
